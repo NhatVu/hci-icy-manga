@@ -291,3 +291,31 @@ body {
     height: 3.82vw;
     padding-top: 0.7vw;
 }
+
+/*most-read-manga*/
+.most-read-manga {
+  margin-top: 4vw;
+}
+
+.most-read-manga-content {
+  margin-top: 4vw;
+  background-image: url(/img/one-piece-vol-76.png);
+   background-color: rgba(0, 0, 0, 0.54);
+  height: 33.3vw;
+}
+
+.most-read-manga-three {
+  position: relative;
+    top: 10%;
+    left: 6.6vw;
+    margin: 0;
+    padding: 0;
+}
+
+.background-over{
+  background-color: rgba(0, 0, 0, 0.54);
+}
+
+.most-read-manga-chap {
+  color: white;
+}
