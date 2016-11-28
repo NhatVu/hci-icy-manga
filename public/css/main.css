@@ -1,12 +1,19 @@
+@font-face {
+    font-family: Norwester;
+    src: url('/norwester-v1.2/norwester.otf');
+    src: url('/norwester-v1.2/webfonts/norwester.ttf') format('truetype'), url('/norwester-v1.2/webfonts/norwester.woff') format('woff');
+}
+
 body {
-    background-color: #ffffff;
+    background-color: #f2f5f7;
     font-family: OpenSans;
-    font-size: 1.25vw;
+    font-size: 1.5em;
 }
 
 .portion-title {
-    font-size: 2.5vw;
+    font-size: 2.5em;
     opacity: 0.54;
+    font-weight: 600;
 }
 
 .no-col-padding {
@@ -18,11 +25,16 @@ body {
     padding: 1vw 4.5vw;
 }
 
+.header .double-font {
+    margin-top: 1vw;
+}
+
 .new-manga-img {
     position: relative;
     width: 17.6vw;
     height: 29.5vw;
     overflow: hidden;
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);
 }
 
 .new-manga-img img {
@@ -63,7 +75,7 @@ body {
 }
 
 .search-opacity {
-    opacity: 0.9;
+    opacity: 0.54;
 }
 
 .img-profile {
@@ -127,6 +139,10 @@ body {
     opacity: 0.54;
 }
 
+.read-now {
+    color: rgba(0, 0, 0, 0.54) !important;
+}
+
 .new-manga .one-manga .read-now {
     border-radius: 10px;
     background-color: #ffffff;
@@ -146,12 +162,11 @@ body {
     margin-top: 7vw;
 }
 
-.popular-author .navigation .pull-right span ,
-.popular-manga .navigation .pull-right span {
+.popular-author .navigation .pull-right span, .popular-manga .navigation .pull-right span {
     border: 1px solid;
     padding: 0.5vw;
     margin: 0 1vw;
-      opacity: 0.6;
+    opacity: 0.6;
 }
 
 .thumbnail-crop {
@@ -185,7 +200,7 @@ body {
 }
 
 .popular-manga-one {
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
     margin: 0 1vw;
     width: 20vw;
     padding: 0;
@@ -234,6 +249,8 @@ body {
     left: 20%;
     bottom: -3vw;
     border: 1px solid transparent;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 .hot-manga-img {
@@ -247,6 +264,7 @@ body {
 }
 
 .hot-manga-img img {
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);
     position: relative;
     width: auto !important;
     height: 100% !important;
@@ -269,14 +287,14 @@ body {
 }
 
 .popular-author-one {
-  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5);
-  margin: 1.5vw 1vw;
-  width: 20vw;
-  padding: 0;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
+    margin: 1.5vw 1vw;
+    width: 20vw;
+    padding: 0;
 }
 
 .popular-author-one img {
-  width: auto;
+    width: auto;
 }
 
 .popular-author-one span {
@@ -292,30 +310,86 @@ body {
     padding-top: 0.7vw;
 }
 
+
 /*most-read-manga*/
+
 .most-read-manga {
-  margin-top: 4vw;
+    margin-top: 4vw;
+    margin-bottom: 4%;
 }
 
 .most-read-manga-content {
-  margin-top: 4vw;
-  background-image: url(/img/one-piece-vol-76.png);
-   background-color: rgba(0, 0, 0, 0.54);
-  height: 33.3vw;
+    margin-top: 4vw;
+    background-image: url(/img/one-piece-vol-76.png);
+    height: 33.3vw;
 }
 
 .most-read-manga-three {
-  position: relative;
+    position: relative;
     top: 10%;
     left: 6.6vw;
     margin: 0;
     padding: 0;
 }
 
-.background-over{
-  background-color: rgba(0, 0, 0, 0.54);
+.most-read-manga-three img {
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+.background-over {
+    background-color: rgba(0, 0, 0, 0.54);
 }
 
 .most-read-manga-chap {
-  color: white;
+    color: white;
+}
+
+.most-read-manga-content .background {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+}
+
+.most-read-manga-description {
+    color: #ffffff;
+    margin-right: 10.5%;
+    margin-top: 5%;
+}
+
+.most-read-manga-description h1 {
+    font-size: 2.25em;
+    font-family: Norwester;
+}
+
+.most-read-manga-description h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    opacity: 0.54;
+}
+
+.most-read-manga-description h3 {
+    font-size: 5em;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+.most-read-manga-description button {
+    margin-top: 12.63%;
+    border-radius: 10px;
+    background-color: #4a90e2;
+    box-shadow: 1px 1px 1px 1px #4a90e2;
+    width: 68%;
+    height: 2.7vw;
+    margin-left: 20%;
+    border: 1px solid transparent;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer {
+    padding-top: 1%;
+    font-size: 1.25em;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 #bdbdbd;
+    padding-left: 7%;
+    padding-bottom: 1%;
 }
