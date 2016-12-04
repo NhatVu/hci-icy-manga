@@ -388,6 +388,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="mask"></div>
 
                 <script src="/bootstrap-3.3.7/js/jquery-2.2.4.min.js"></script>
                 <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -396,18 +397,26 @@
                 <script>
                     var menuLeft = document.getElementById('cbp-spmenu-s1'),
                         showLeftPush = document.getElementById('showLeftPush'),
-                        body = document.body;
+                        body = document.body,
+                        mask = document.getElementById('mask');
 
 
                     showLeftPush.onclick = function() {
                         classie.toggle(this, 'active');
                         classie.toggle(body, 'cbp-spmenu-push-toright');
                         classie.toggle(menuLeft, 'cbp-spmenu-open');
+                        classie.toggle(mask, 'mask-active');
                         disableOther('showLeftPush');
                         $('.body').css({
                             "background-color": "rgba(0, 0, 0, 0.72)",
                             "border": "solid 1 px #979797"
                         })
+
+                        // $('mask').toggleClass('mask-active');
+                    };
+
+                    mask.onclick = function() {
+                        $('#showLeftPush').trigger('click')
                     };
                 </script>
     </body>
