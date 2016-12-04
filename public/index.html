@@ -5,6 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Icy Manga</title>
+        <!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
         <link rel="stylesheet" href="/bootstrap-3.3.7/css/bootstrap.min.css" media="screen" title="no title">
         <link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" media="screen" title="no title">
@@ -13,340 +16,364 @@
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" title="no title"> -->
     </head>
 
-    <body>
-        <!-- header -->
-        <div class="header">
-            <button href="#" class="btn btn-hamburger">
+    <body class="cbp-spmenu-push">
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+            <h1>MENU</h1>
+            <a href="#">Trang chủ</a>
+            <a href="#">Tất cả truyện</a>
+            <a href="#">Nhân vật</a>
+            <a href="#">Hướng dẫn</a>
+            <a href="#">Sản phẩm </a>
+            <a href="#" class="inline"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="inline"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="#" class="inline"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </nav>
+        <div class="body">
+            <!-- header -->
+            <div class="container-fluid">
+
+                <div class="header">
+                    <button id="showLeftPush" class="btn btn-hamburger">
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
             </button>
-            <div class="line"></div>
-            <button class="browser-category">
+                    <div class="line"></div>
+                    <button class="browser-category">
               Browswer Categories <span class="glyphicon glyphicon-menu-down"></span>
             </button>
-            <span class="header-content">ICY MANGA</span>
-            <div class="pull-right double-font">
-                <i class="fa fa-search search-opacity" aria-hidden="true"></i>
-                <img class="img-circle img-responsive img-profile inline" src="/img/profile.jpg" alt="profile">
+                    <span class="header-content">ICY MANGA</span>
+                    <div class="pull-right double-font">
+                        <i class="fa fa-search search-opacity" aria-hidden="true"></i>
+                        <img class="img-circle img-responsive img-profile inline" src="/img/profile.jpg" alt="profile">
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- end header -->
-        <!-- new manga -->
-        <div class="new-manga">
+            <!-- end header -->
+            <!-- new manga -->
             <div class="container-fluid">
-                <div class="row">
-                    <div class="owl-carousel">
+                <div class="new-manga">
+                    <div class="row">
+                        <div class="owl-carousel">
 
-                        <div class="col-sm-6 col-md-6 col-lg-6 no-col-padding" style="width:640px">
-                            <div class="one-manga">
-                                <div class="new-manga-img">
-                                    <img class="portrait" src="/img/fairy-tail-cover.jpg" alt="cover" />
-                                </div>
-                                <div class="new-manga-content">
-
-
-                                    <h2>Fairy Tail</h2>
-                                    <h3>by Mashima Hiro</h3>
-                                    <div class="star">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <div class="col-sm-6 col-md-6 col-lg-6 no-col-padding">
+                                <div class="one-manga">
+                                    <div class="new-manga-img">
+                                        <img class="portrait" src="/img/fairy-tail-cover.jpg" alt="cover" />
                                     </div>
-                                    <p class="description">Lucy là một cô gái 17 tuổi, với giấc mơ trở thành một tinh linh pháp sư thực thụ.Rồi một ngày cô đến thị trấn Harujion, cô đã gặp Natsu, một thiếu niên có khả năng sử dụng ma thuật lửa.Nhưng Natsu không phải là một
-                                        pháp sư thông thường, cậu sử dụng ma thuật...
-                                    </p>
-                                    <button class="read-now">Đọc ngay</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 no-col-padding" style="width:640px">
-                            <div class="one-manga">
-                                <div class="new-manga-img">
+                                    <div class="new-manga-content">
 
-                                    <img src="/img/nanatsu-no-taizai-cover.jpg" alt="cover" />
-                                </div>
-                                <div class="new-manga-content">
-                                    <h2>Nanatsu no Taizai</h2>
-                                    <h3>by Nakaba Suzuki</h3>
-                                    <div class="star">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+                                        <h2>Fairy Tail</h2>
+                                        <h3>by Mashima Hiro</h3>
+                                        <div class="star">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="description">
+
+                                            <p>Lucy là một cô gái 17 tuổi, với giấc mơ trở thành một tinh linh pháp sư thực thụ.Rồi một ngày cô đến thị trấn Harujion, cô đã gặp Natsu, một thiếu niên có khả năng sử dụng ma thuật lửa.Nhưng Natsu không phải
+                                                là một pháp sư thông thường, cậu sử dụng ma thuật...
+                                            </p>
+                                        </div>
+                                        <button class="read-now">Đọc ngay</button>
                                     </div>
-                                    <p class="description">"Thất đại ác nhân", một nhóm chiến binh có tham vọng lật đổ vương quốc Britannia, được cho là đã bị tiêu diệt bởi các "hiệp sĩ thánh chiến" mặc dù vẫn còn 1 số người cho rằng họ vẫn còn sống. 10 năm sau, Các hiệp sĩ
-                                        thánh chiến đã làm 1 cuộc đảo chính..
-                                    </p>
-                                    <button class="read-now">Đọc ngay</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 no-col-padding">
+                                <div class="one-manga">
+                                    <div class="new-manga-img">
+
+                                        <img src="/img/nanatsu-no-taizai-cover.jpg" alt="cover" />
+                                    </div>
+                                    <div class="new-manga-content">
+                                        <h2>Nanatsu no Taizai</h2>
+                                        <h3>by Nakaba Suzuki</h3>
+                                        <div class="star">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="description">
+
+                                            <p>"Thất đại ác nhân", một nhóm chiến binh có tham vọng lật đổ vương quốc Britannia, được cho là đã bị tiêu diệt bởi các "hiệp sĩ thánh chiến" mặc dù vẫn còn 1 số người cho rằng họ vẫn còn sống. 10 năm sau, Các
+                                                hiệp sĩ thánh chiến đã làm 1 cuộc đảo chính..
+                                            </p>
+                                        </div>
+                                        <button class="read-now">Đọc ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-sm-3 col-md-6 col-lg-6 no-col-padding"></div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end new manga -->
+            <!-- popular manga -->
+            <div class="container-fluid">
+                <div class="popular-manga">
+                    <div class="row">
+                        <div class="col-sm-12 navigation">
+                            <h2 class="inline portion-title">Truyện phổ biến</h2>
+                            <div class="pull-right inline">
+                                <span>All</span>
+                                <span class="glyphicon glyphicon-menu-left"></span>
+                                <span class="glyphicon glyphicon-menu-right"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <div class="row">
+                        <div class="col-sm-3 popular-manga-one">
+                            <div class="thumbnail-crop">
+                                <img src="/img/naruto-cover.jpg" alt="naruto cover" />
+                            </div>
+                            <div class="caption">
+                                <h4>Naruto</h4>
+                                <span>by Kishimoto Masashi</span>
+                                <div>
+                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                    <span class="pull-right">Chap 690</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-sm-3 col-md-6 col-lg-6 no-col-padding"></div> -->
+
+                        <div class="col-sm-3 popular-manga-one">
+                            <div class="thumbnail-crop">
+                                <img src="/img/dragon-ball-cover.jpg" alt="naruto cover" />
+                            </div>
+                            <div class="caption">
+                                <h4>Dragon Ball</h4>
+                                <span>by Toriyama Akira</span>
+                                <div>
+                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                    <span class="pull-right">Chap 690</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 popular-manga-one">
+                            <div class="thumbnail-crop">
+                                <img src="/img/bleach-cover.jpg" alt="naruto cover" />
+                            </div>
+                            <div class="caption">
+                                <h4>Bleach</h4>
+                                <span>by Tite Kubo</span>
+                                <div>
+                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                    <span class="pull-right">Chap 690</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 popular-manga-one">
+                            <div class="thumbnail-crop">
+                                <img src="/img/conan-cover.jpg" alt="naruto cover" />
+                            </div>
+                            <div class="caption">
+                                <h4>Conan</h4>
+                                <span>by Aoyama Gōshō</span>
+                                <div>
+                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                    <span class="pull-right">Chap 690</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end popular manga -->
+            <!-- hot manga -->
+            <div class="container-fluid">
+
+                <div class="hot-manga">
+                    <h2 class="inline portion-title ">Truyện hot</h2>
+                    <div class="hot-manga-content">
+                        <div class="hot-manga-img">
+                            <img src="/img/one-piece-cover.jpg" alt="one piece">
+                        </div>
+                        <h1 class="text-center title">One Piece</h1>
+                        <h1 class="text-center author">by Eiichiro Oda</h1>
+                        <p>Monkey D. Luffy, 1 cậu bé rất thích hải tặc có ước mơ tìm được kho báu One Piece và trở thành Vua hải tặc - Pirate King. Lúc nhỏ, Luffy tình cờ ăn phải trái quỉ (Devil Fruit) Gomu Gomu, nó cho cơ thể cậu khả năng co dãn đàn hồi
+                            như cao su nhưng đổi lại cậu sẽ không bao giờ biết bơi. Sau đó Luffy lại được Shank cứu thoát tuy nhiên ông ta bị mất 1 cánh tay. Sau đấy Shank chia tay Luffy và để lại cho cậu cái mũ rơm (Straw Hat) và nói rằng: "Sau này bao
+                            giờ thành cướp biển hãy gặp ta và trả lại nó". Chính lời nói này đã thúc đầy Luffy trở thành 1 cướp biển thật sự</p>
+                        <button>Đọc ngay</button>
                     </div>
                 </div>
             </div>
+            <!-- end hot manga -->
+            <!-- recommender manga -->
+            <div class="container-fluid">
+                <div class="popular-manga">
+                    <div class="row">
+                        <div class="col-sm-12 navigation">
+                            <h2 class="inline portion-title">Truyện được đề cử hay nhất năm</h2>
+                            <div class="pull-right inline">
+                                <span>All</span>
+                                <span class="glyphicon glyphicon-menu-left"></span>
+                                <span class="glyphicon glyphicon-menu-right"></span>
+                            </div>
+                        </div>
+                    </div>
 
-        </div>
-        <!-- end new manga -->
-        <!-- popular manga -->
-        <div class="popular-manga">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 navigation">
-                        <h2 class="inline portion-title">Truyện phổ biến</h2>
-                        <div class="pull-right inline">
-                            <span>All</span>
-                            <span class="glyphicon glyphicon-menu-left"></span>
-                            <span class="glyphicon glyphicon-menu-right"></span>
+                    <!-- content -->
+                    <div class="row">
+                        <div class="col-sm-3 popular-manga-one">
+                            <div class="thumbnail-crop">
+                                <img src="/img/naruto-cover.jpg" alt="naruto cover" />
+                            </div>
+                            <div class="caption">
+                                <h4>Naruto</h4>
+                                <span>by Kishimoto Masashi</span>
+                                <div>
+                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                    <span class="pull-right">Chap 690</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 popular-manga-one">
+                            <div class="thumbnail-crop">
+                                <img src="/img/dragon-ball-cover.jpg" alt="naruto cover" />
+                            </div>
+                            <div class="caption">
+                                <h4>Dragon Ball</h4>
+                                <span>by Toriyama Akira</span>
+                                <div>
+                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                    <span class="pull-right">Chap 690</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 popular-manga-one">
+                            <div class="thumbnail-crop">
+                                <img src="/img/bleach-cover.jpg" alt="naruto cover" />
+                            </div>
+                            <div class="caption">
+                                <h4>Bleach</h4>
+                                <span>by Tite Kubo</span>
+                                <div>
+                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                    <span class="pull-right">Chap 690</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 popular-manga-one">
+                            <div class="thumbnail-crop">
+                                <img src="/img/conan-cover.jpg" alt="naruto cover" />
+                            </div>
+                            <div class="caption">
+                                <h4>Conan</h4>
+                                <span>by Aoyama Gōshō</span>
+                                <div>
+                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                    <span class="pull-right">Chap 690</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end recommender manga -->
+            <!-- popular author -->
+            <div class="container-fluid">
+                <div class="popular-author">
+                    <div class="row">
+                        <div class="col-sm-12 navigation">
+                            <h2 class="inline portion-title">Tác giả được yêu thích nhất</h2>
+                            <div class="pull-right inline">
+                                <span>All</span>
+                                <span class="glyphicon glyphicon-menu-left"></span>
+                                <span class="glyphicon glyphicon-menu-right"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <div class="row">
+                        <div class="col-sm-3 popular-author-one">
+                            <div class="thumbnail-crop">
+                                <img style="left:50%;width:100%" src="/img/Masashi_Kishimoto.png" alt="Masashi_Kishimoto" />
+                                <span>Kishimoto Masashi</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 popular-author-one">
+                            <div class="thumbnail-crop">
+                                <img style="left:40%" src="/img/toriyama-akira.jpg" alt="dragon ball author cover" />
+                                <span>Toriyama Akira</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-3 popular-author-one">
+                            <div class="thumbnail-crop">
+                                <img style="left:50%" src="/img/tumiko-takahashi.jpg" alt="naruto cover" />
+                                <span>Tumiko Takahashi</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 popular-author-one">
+                            <div class="thumbnail-crop">
+                                <img style="left:50%;width:100%" src="/img/aoyama-gosho.jpg" alt="naruto cover" />
+                                <span>Aoyama Gōshō</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end popular author -->
+            <div class="container-fluid">
+                <div class="most-read-manga">
+                    <div class="row">
+                        <div class="col-sm-12 navigation">
+                            <h2 class="inline portion-title">Bộ truyện được đọc nhiều nhất</h2>
                         </div>
                     </div>
                 </div>
 
                 <!-- content -->
-                <div class="row">
-                    <div class="col-sm-3 popular-manga-one">
-                        <div class="thumbnail-crop">
-                            <img src="/img/naruto-cover.jpg" alt="naruto cover" />
-                        </div>
-                        <div class="caption">
-                            <h4>Naruto</h4>
-                            <span>by Kishimoto Masashi</span>
-                            <div>
-                                <i class="fa fa-star star" aria-hidden="true"></i> 4.4
-                                <span class="pull-right">Chap 690</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row most-read-manga-content">
+                    <div class="background">
 
-                    <div class="col-sm-3 popular-manga-one">
-                        <div class="thumbnail-crop">
-                            <img src="/img/dragon-ball-cover.jpg" alt="naruto cover" />
-                        </div>
-                        <div class="caption">
-                            <h4>Dragon Ball</h4>
-                            <span>by Toriyama Akira</span>
-                            <div>
-                                <i class="fa fa-star star" aria-hidden="true"></i> 4.4
-                                <span class="pull-right">Chap 690</span>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="most-read-manga-three">
+                            <div class="background-over">
+                                <div class="col-sm-2 most-read-manga-one">
+                                    <div class="thumbnail-crop">
+                                        <img style="left:40%" src="/img/one-piece-vol_1.jpg" alt="dragon ball author cover" />
+                                    </div>
 
-                    <div class="col-sm-3 popular-manga-one">
-                        <div class="thumbnail-crop">
-                            <img src="/img/bleach-cover.jpg" alt="naruto cover" />
-                        </div>
-                        <div class="caption">
-                            <h4>Bleach</h4>
-                            <span>by Tite Kubo</span>
-                            <div>
-                                <i class="fa fa-star star" aria-hidden="true"></i> 4.4
-                                <span class="pull-right">Chap 690</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 popular-manga-one">
-                        <div class="thumbnail-crop">
-                            <img src="/img/conan-cover.jpg" alt="naruto cover" />
-                        </div>
-                        <div class="caption">
-                            <h4>Conan</h4>
-                            <span>by Aoyama Gōshō</span>
-                            <div>
-                                <i class="fa fa-star star" aria-hidden="true"></i> 4.4
-                                <span class="pull-right">Chap 690</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- end popular manga -->
-        <!-- hot manga -->
-        <div class="hot-manga">
-            <h2 class="inline portion-title ">Truyện hot</h2>
-            <div class="hot-manga-content">
-                <div class="hot-manga-img">
-                    <img src="/img/one-piece-cover.jpg" alt="one piece">
-                </div>
-                <h1 class="text-center title">One Piece</h1>
-                <h1 class="text-center author">by Eiichiro Oda</h1>
-                <p>Monkey D. Luffy, 1 cậu bé rất thích hải tặc có ước mơ tìm được kho báu One Piece và trở thành Vua hải tặc - Pirate King. Lúc nhỏ, Luffy tình cờ ăn phải trái quỉ (Devil Fruit) Gomu Gomu, nó cho cơ thể cậu khả năng co dãn đàn hồi như cao
-                    su nhưng đổi lại cậu sẽ không bao giờ biết bơi. Sau đó Luffy lại được Shank cứu thoát tuy nhiên ông ta bị mất 1 cánh tay. Sau đấy Shank chia tay Luffy và để lại cho cậu cái mũ rơm (Straw Hat) và nói rằng: "Sau này bao giờ thành cướp
-                    biển hãy gặp ta và trả lại nó". Chính lời nói này đã thúc đầy Luffy trở thành 1 cướp biển thật sự</p>
-                <button>Đọc ngay</button>
-            </div>
-        </div>
-        <!-- end hot manga -->
-        <!-- recommender manga -->
-        <div class="popular-manga">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 navigation">
-                        <h2 class="inline portion-title">Truyện được đề cử hay nhất năm</h2>
-                        <div class="pull-right inline">
-                            <span>All</span>
-                            <span class="glyphicon glyphicon-menu-left"></span>
-                            <span class="glyphicon glyphicon-menu-right"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- content -->
-                <div class="row">
-                    <div class="col-sm-3 popular-manga-one">
-                        <div class="thumbnail-crop">
-                            <img src="/img/naruto-cover.jpg" alt="naruto cover" />
-                        </div>
-                        <div class="caption">
-                            <h4>Naruto</h4>
-                            <span>by Kishimoto Masashi</span>
-                            <div>
-                                <i class="fa fa-star star" aria-hidden="true"></i> 4.4
-                                <span class="pull-right">Chap 690</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 popular-manga-one">
-                        <div class="thumbnail-crop">
-                            <img src="/img/dragon-ball-cover.jpg" alt="naruto cover" />
-                        </div>
-                        <div class="caption">
-                            <h4>Dragon Ball</h4>
-                            <span>by Toriyama Akira</span>
-                            <div>
-                                <i class="fa fa-star star" aria-hidden="true"></i> 4.4
-                                <span class="pull-right">Chap 690</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 popular-manga-one">
-                        <div class="thumbnail-crop">
-                            <img src="/img/bleach-cover.jpg" alt="naruto cover" />
-                        </div>
-                        <div class="caption">
-                            <h4>Bleach</h4>
-                            <span>by Tite Kubo</span>
-                            <div>
-                                <i class="fa fa-star star" aria-hidden="true"></i> 4.4
-                                <span class="pull-right">Chap 690</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 popular-manga-one">
-                        <div class="thumbnail-crop">
-                            <img src="/img/conan-cover.jpg" alt="naruto cover" />
-                        </div>
-                        <div class="caption">
-                            <h4>Conan</h4>
-                            <span>by Aoyama Gōshō</span>
-                            <div>
-                                <i class="fa fa-star star" aria-hidden="true"></i> 4.4
-                                <span class="pull-right">Chap 690</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- end recommender manga -->
-        <!-- popular author -->
-        <div class="popular-author">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 navigation">
-                        <h2 class="inline portion-title">Tác giả được yêu thích nhất</h2>
-                        <div class="pull-right inline">
-                            <span>All</span>
-                            <span class="glyphicon glyphicon-menu-left"></span>
-                            <span class="glyphicon glyphicon-menu-right"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- content -->
-                <div class="row">
-                    <div class="col-sm-3 popular-author-one">
-                        <div class="thumbnail-crop">
-                            <img style="left:50%;width:100%" src="/img/Masashi_Kishimoto.png" alt="Masashi_Kishimoto" />
-                            <span>Kishimoto Masashi</span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 popular-author-one">
-                        <div class="thumbnail-crop">
-                            <img style="left:40%" src="/img/toriyama-akira.jpg" alt="dragon ball author cover" />
-                            <span>Toriyama Akira</span>
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-3 popular-author-one">
-                        <div class="thumbnail-crop">
-                            <img style="left:50%" src="/img/tumiko-takahashi.jpg" alt="naruto cover" />
-                            <span>Tumiko Takahashi</span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 popular-author-one">
-                        <div class="thumbnail-crop">
-                            <img style="left:50%;width:100%" src="/img/aoyama-gosho.jpg" alt="naruto cover" />
-                            <span>Aoyama Gōshō</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end popular author -->
-        <div class="most-read-manga">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 navigation">
-                        <h2 class="inline portion-title">Bộ truyện được đọc nhiều nhất</h2>
-                    </div>
-                </div>
-            </div>
-
-            <!-- content -->
-            <div class="row most-read-manga-content">
-                <div class="background">
-
-                    <div class="most-read-manga-three">
-                        <div class="background-over">
-                            <div class="col-sm-2 most-read-manga-one">
-                                <div class="thumbnail-crop">
-                                    <img style="left:40%" src="/img/one-piece-vol_1.jpg" alt="dragon ball author cover" />
                                 </div>
 
-                            </div>
+                                <div class="col-sm-2 most-read-manga-one">
+                                    <div class="thumbnail-crop">
+                                        <img style="left:40%" src="/img/one-piece-vol_2.jpg" alt="dragon ball author cover" />
+                                    </div>
 
-                            <div class="col-sm-2 most-read-manga-one">
-                                <div class="thumbnail-crop">
-                                    <img style="left:40%" src="/img/one-piece-vol_2.jpg" alt="dragon ball author cover" />
                                 </div>
 
-                            </div>
+                                <div class="col-sm-2 most-read-manga-one">
+                                    <div class="thumbnail-crop">
+                                        <img style="left:40%" src="/img/one-piece-vol_3.jpg" alt="dragon ball author cover" />
+                                    </div>
 
-                            <div class="col-sm-2 most-read-manga-one">
-                                <div class="thumbnail-crop">
-                                    <img style="left:40%" src="/img/one-piece-vol_3.jpg" alt="dragon ball author cover" />
                                 </div>
-
                             </div>
                         </div>
-                    </div>
-                    <div class="most-read-manga-description pull-right">
-                        <h1 class="text-center">One Piece</h1>
-                        <h2 class="text-center">by Eiichiro Oda</h2>
-                        <h3 class="text-center">83 Vols</h1>
+                        <div class="most-read-manga-description pull-right">
+                            <h1 class="text-center">One Piece</h1>
+                            <h2 class="text-center">by Eiichiro Oda</h2>
+                            <h3 class="text-center">83 Vols</h1>
                         <button>Đọc ngay</button>
 
                     </div>
@@ -354,23 +381,35 @@
             </div>
         </div>
 
+          <div class="container-fluid">
+
         <div class="footer">
           <h3>Tải ngay trên <a href="#">Android</a> &#124 <a href="#">iOS</a></h3>
+                        </div>
                     </div>
+                </div>
 
-                    <script src="/bootstrap-3.3.7/js/jquery-2.2.4.min.js"></script>
-                    <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-                    <script src="/owlcarousel/owl.carousel.min.js"></script>
-                    <script type="text/javascript">
-                        // $(document).ready(function() {
-                        //     $(".owl-carousel").owlCarousel({
-                        //         loop: true,
-                        //         center: true,
-                        //         margin: 10,
-                        //         items: 2
-                        //     });
-                        // });
-                    </script>
+                <script src="/bootstrap-3.3.7/js/jquery-2.2.4.min.js"></script>
+                <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+                <script src="/owlcarousel/owl.carousel.min.js"></script>
+                <script src="js/classie.js"></script>
+                <script>
+                    var menuLeft = document.getElementById('cbp-spmenu-s1'),
+                        showLeftPush = document.getElementById('showLeftPush'),
+                        body = document.body;
+
+
+                    showLeftPush.onclick = function() {
+                        classie.toggle(this, 'active');
+                        classie.toggle(body, 'cbp-spmenu-push-toright');
+                        classie.toggle(menuLeft, 'cbp-spmenu-open');
+                        disableOther('showLeftPush');
+                        $('.body').css({
+                            "background-color": "rgba(0, 0, 0, 0.72)",
+                            "border": "solid 1 px #979797"
+                        })
+                    };
+                </script>
     </body>
 
 </html>

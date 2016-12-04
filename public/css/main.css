@@ -4,6 +4,13 @@
     src: url('/norwester-v1.2/webfonts/norwester.ttf') format('truetype'), url('/norwester-v1.2/webfonts/norwester.woff') format('woff');
 }
 
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    /* or 950px */
+}
+
 body {
     background-color: #f2f5f7;
     font-family: OpenSans;
@@ -34,10 +41,11 @@ body {
 
 .new-manga-img {
     position: relative;
-    width: 17.6vw;
-    height: 29.5vw;
+    width: 40%;
+    height: 110%;
     overflow: hidden;
     box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 2%;
 }
 
 .new-manga-img img {
@@ -54,9 +62,15 @@ body {
 .new-manga-content {
     position: absolute;
     z-index: 1;
-    left: 42%;
+    left: 45%;
     top: 12%;
     margin-right: 1vw;
+    height: inherit;
+}
+
+.description {
+    height: 32%;
+    overflow: auto;
 }
 
 .btn-hamburger {
@@ -122,7 +136,7 @@ body {
 }
 
 .new-manga .one-manga {
-    padding: 0 1.6vw;
+    padding: 0 1.5%;
     padding-top: 3vw;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -151,8 +165,8 @@ body {
     background-color: #ffffff;
     color: #000000;
     height: 2.7vw;
-    width: 10.8vw;
-    font-size: 1.5vw;
+    width: 50%;
+    font-size: 1.5em;
     border: 1px;
     margin-left: 5vw;
     margin-top: 0.5vw;
@@ -162,7 +176,7 @@ body {
 /*popular manga*/
 
 .popular-manga {
-    margin-top: 7vw;
+    margin: 7vw 6.5% 0 6.5%;
 }
 
 .popular-author .navigation .pull-right span, .popular-manga .navigation .pull-right span {
@@ -204,8 +218,8 @@ body {
 
 .popular-manga-one {
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
-    margin: 0 1vw;
-    width: 20vw;
+    margin: 0 1%;
+    width: 23%;
     padding: 0;
 }
 
@@ -227,7 +241,7 @@ body {
 .hot-manga-content h1 {
     width: 100%;
     font-family: Norwester;
-    font-size: 2.5vw;
+    font-size: 2.5em;
 }
 
 .hot-manga-content h1.author {
@@ -257,8 +271,9 @@ body {
 }
 
 .hot-manga-img, .short-detail-img {
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);
     position: relative;
-    width: 26.3vw;
+    width: 26.25%;
     height: 39.5vw;
     overflow: hidden;
     float: right;
@@ -267,7 +282,7 @@ body {
 }
 
 .hot-manga-img img, .short-detail-img img {
-    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);*/
     position: relative;
     width: auto !important;
     height: 100% !important;
@@ -286,13 +301,14 @@ body {
 /*popular author*/
 
 .popular-author {
-    margin-top: 4.2vw;
+    /*margin-top: 4.2vw;*/
+    margin: 4.2vw 6.5% 0 6.5%;
 }
 
 .popular-author-one {
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
-    margin: 1.5vw 1vw;
-    width: 20vw;
+    margin: 1.5% 1%;
+    width: 23%;
     padding: 0;
 }
 
@@ -305,7 +321,7 @@ body {
     position: absolute;
     top: 90%;
     color: white;
-    font-size: 1.25vw;
+    font-size: 1.25em;
     background-color: rgba(0, 0, 0, 0.54);
     width: 100%;
     text-align: center;
@@ -414,7 +430,7 @@ body {
     overflow: hidden;
     float: left;
     right: -3vw;
-    top: -2vw;
+    top: -3vw;
 }
 
 .short-detail-img img {
@@ -455,7 +471,7 @@ body {
 }
 
 .detail-view-second {
-    margin: 1% 5%;
+    /*margin: 1% 5%;*/
 }
 
 .detail-view-second .review .media {
@@ -526,7 +542,6 @@ body {
     font-size: 1.25em;
     width: 100%;
     margin: 0 40%;
-  
 }
 
 .detail-view-second .load-more button {
@@ -537,4 +552,52 @@ body {
     border: solid 1px #979797;
     background-color: #f2f5f7;
     height: 3.2vw;
+}
+
+.detail-view-second .related-manga>h1 {
+    margin-bottom: 25%;
+    margin-right: 10%;
+}
+
+.detail-view-second .related-manga img {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #979797;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.detail-view-second .related-manga .save {
+    border: solid 1px #979797;
+    width: 40%;
+    margin: 5% 0 20% 30%;
+    background-color: #f2f5f7;
+    height: 3vw;
+}
+
+.also-like {
+    margin-bottom: 5%;
+}
+
+.also-like>h1 {
+    background-color: #1e88e5;
+    border: solid 1px #979797;
+    color: #ffffff;
+    font-size: 2.5em;
+    padding: 5% 0;
+}
+
+.review-comment {
+    margin: 1% 5%;
+}
+
+.also-like .fa-chevron-right {
+    font-size: 2em;
+    margin-top: 250%;
+    margin-left: 20%;
+}
+
+.also-like .fa-chevron-left {
+    font-size: 2em;
+    margin-top: 250%;
+    margin-left: 60%;
 }

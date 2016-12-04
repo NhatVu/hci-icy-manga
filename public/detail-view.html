@@ -59,13 +59,12 @@
                     </div>
                 </div>
                 <div class="short-detail-navigation pull-right">
-                    <button class="btn chapter-list">Chap 1 <i class="fa fa-angle-down" aria-hidden="true"></i>
-</button>
+                    <button class="btn chapter-list">Chap 1 <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                     <button class="btn read-now">Đọc ngay</button>
                 </div>
             </div>
             <div class="detail-view-second">
-                <div class="container-fluid">
+                <div class="container-fluid review-comment">
                     <div class="row">
                         <div class="col-sm-8">
                             <div class="review">
@@ -270,37 +269,174 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="comment-one">
+                                    <ul class="media-list">
+                                        <li class="media">
+                                            <div class="media-left">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle img-responsive" src="/img/profile.jpg" alt="Generic placeholder image">
+                                                </a>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <div class="media-heading">
+                                                    <h6 class="inline">Red Beard</h6>
+                                                    <div class="star inline search-opacity">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="inline pull-right">
+                                                        <span class="time">10 phút trước</span>
+                                                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+
+                                                <p>
+                                                    This is some sample text. This is some sample text. This is some sample text. This is some sample text. This is some sample text. This is some sample text. This is some sample text. This is some sample text.
+                                                </p>
+                                                <p class="like-reply">
+                                                    <a href="#"><i class="heart-border fa fa-heart-o" aria-hidden="true"></i></a>&nbsp;69 &nbsp;&nbsp;&nbsp;
+                                                    <a href="#" style="color: inherit"><i class="search-opacity fa fa-reply" aria-hidden="true"></i></a> &nbsp;2</p>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="load-more">
                                 <button>Tải thêm</button>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3 col-sm-offset-1">
                             <div class="related-manga">
-
+                                <h1 class="search-opacity pull-right">Liên quan</h1>
+                                <div class="related-manga">
+                                    <img class="img img-responsive" src="/img/one-piece-vol_1.jpg" alt="">
+                                    <button class="save">Lưu lại</button>
+                                </div>
+                                <div class="related-manga">
+                                    <img class="img img-responsive" src="/img/one-piece-vol_2.jpg" alt="">
+                                    <button class="save" style="background-color: #ffffff;">Lưu lại</button>
+                                </div>
+                                <div class="related-manga">
+                                    <img class="img img-responsive" src="/img/one-piece-vol_3.jpg" alt="">
+                                    <button class="save">Lưu lại</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="container-fluid">
 
-            <script src="/bootstrap-3.3.7/js/jquery-2.2.4.min.js"></script>
-            <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-            <script src="/owlcarousel/owl.carousel.min.js"></script>
-            <script type="text/javascript">
-                $(function() {
-                    // $(document).on("mousewheel", function() {
-                    $(window).scroll(function() {
-                        if ($(document).scrollTop() > 100) {
-                            // $('.secondaryNav').show();
-                            $('.short-detail-navigation').fadeOut(1000);
-                        } else {
-                            // $('.secondaryNav').hide();
-                            $('.short-detail-navigation').fadeIn(1000);
-                        };
-                    });
+                    <!-- you may also like -->
+                    <div class="also-like">
+                        <h1 class="text-center">Bạn có thể sẽ thích</h1>
+                        <div class="popular-manga ">
+                            <div class="row">
+                                <div class="col-sm-1"><a href="#" style="color: inherit;"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-sm-10">
+                                    <div class="row">
+                                        <div class="col-sm-3 popular-manga-one">
+                                            <div class="thumbnail-crop">
+                                                <img src="/img/naruto-cover.jpg" alt="naruto cover" />
+                                            </div>
+                                            <div class="caption">
+                                                <h4>Naruto</h4>
+                                                <span>by Kishimoto Masashi</span>
+                                                <div>
+                                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                                    <span class="pull-right">Chap 690</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-3 popular-manga-one">
+                                            <div class="thumbnail-crop">
+                                                <img src="/img/dragon-ball-cover.jpg" alt="naruto cover" />
+                                            </div>
+                                            <div class="caption">
+                                                <h4>Dragon Ball</h4>
+                                                <span>by Toriyama Akira</span>
+                                                <div>
+                                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                                    <span class="pull-right">Chap 690</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-3 popular-manga-one">
+                                            <div class="thumbnail-crop">
+                                                <img src="/img/bleach-cover.jpg" alt="naruto cover" />
+                                            </div>
+                                            <div class="caption">
+                                                <h4>Bleach</h4>
+                                                <span>by Tite Kubo</span>
+                                                <div>
+                                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                                    <span class="pull-right">Chap 690</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-3 popular-manga-one">
+                                            <div class="thumbnail-crop">
+                                                <img src="/img/conan-cover.jpg" alt="naruto cover" />
+                                            </div>
+                                            <div class="caption">
+                                                <h4>Conan</h4>
+                                                <span>by Aoyama Gōshō</span>
+                                                <div>
+                                                    <i class="fa fa-star star" aria-hidden="true"></i> 4.4
+                                                    <span class="pull-right">Chap 690</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-1"><a href="#" style="color: inherit;"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <!-- content -->
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <h3>Tải ngay trên <a href="#">Android</a> &#124 <a href="#">iOS</a></h3>
+        </div>
+
+        <script src="/bootstrap-3.3.7/js/jquery-2.2.4.min.js"></script>
+        <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="/owlcarousel/owl.carousel.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                // $(document).on("mousewheel", function() {
+                $(window).scroll(function() {
+                    if ($(document).scrollTop() > 100) {
+                        // $('.secondaryNav').show();
+                        $('.short-detail-navigation').fadeOut(1000);
+                        $('.detail-view-second').fadeIn(1000);
+                    } else {
+                        // $('.secondaryNav').hide();
+                        $('.short-detail-navigation').fadeIn(1000);
+                        $('.detail-view-second').fadeOut(1000);
+
+                    };
                 });
-            </script>
+            });
+        </script>
     </body>
 
 </html>
