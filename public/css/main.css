@@ -17,6 +17,10 @@ body {
     font-size: 1.5em;
 }
 
+.no-outline {
+  outline: none !important;
+}
+
 .portion-title {
     font-size: 2.5em;
     opacity: 0.54;
