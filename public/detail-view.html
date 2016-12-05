@@ -27,19 +27,42 @@
             <a href="#" class="inline"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
             <a href="#" class="inline"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </nav>
-        <!-- header -->
-        <div class="header">
-            <button id="showLeftPush" class="btn btn-hamburger">
+        <div class="container-fluid">
+            <!-- header -->
+            <div class="header">
+                <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
+                    <a href="#">Hành đông (100)</a>
+                    <a href="#">Siêu nhiên (50)</a>
+                    <a href="#">Tâm lý (90)</a>
+
+                    <a href="#">Học đường (70)</a>
+                    <a href="#">Pháp thuật (200)</a>
+                    <a href="#">Hài hước (60)</a>
+                    <a href="#">Trinh thám (100)</a>
+                    <a href="#">Thể thao (20)</a>
+                    <a href="#">Phiêu lưu (10)</a>
+
+                    <a href="#">Viễn tưởng (29)</a>
+                    <a href="#">Robot (100)</a>
+                    <a href="#">Lãng mạn (100)</a>
+
+                    <a href="#">Đời thường (10)</a>
+                    <a href="#">Game (60)</a>
+                    <a href="#">Siêu nhân (100)</a>
+                    <a href="#">Lãng mạn (100)</a>
+                </nav>
+                <button id="showLeftPush" class="btn btn-hamburger no-outline">
               <span class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
-            <div class="line"></div>
-            <button class="browser-category">
+                <div class="line"></div>
+                <button id="showTop" class="browser-category no-outline">
             Browswer Categories <span class="glyphicon glyphicon-menu-down"></span>
           </button>
-            <span class="header-content">ICY MANGA</span>
-            <div class="pull-right double-font">
-                <i class="fa fa-search search-opacity" aria-hidden="true"></i>
-                <img class="img-circle img-responsive img-profile inline" src="/img/profile.jpg" alt="profile">
+                <span class="header-content">ICY MANGA</span>
+                <div class="pull-right double-font">
+                    <i class="fa fa-search search-opacity" aria-hidden="true"></i>
+                    <img class="img-circle img-responsive img-profile inline" src="/img/profile.jpg" alt="profile">
+                </div>
             </div>
         </div>
 
@@ -72,7 +95,23 @@
                     </div>
                 </div>
                 <div class="short-detail-navigation pull-right">
-                    <button class="btn chapter-list">Chap 1 <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4" style="overflow:auto">
+                        <a href="#">Chap 1</a>
+                        <a href="#">Chap 2</a>
+                        <a href="#">Chap 3</a>
+
+                        <a href="#">Chap 4</a>
+                        <a href="#">Chap 5</a>
+                        <a href="#">Chap 6</a>
+                        <a href="#">Chap 7</a>
+                        <a href="#">Chap 8</a>
+                        <a href="#">Chap 9</a>
+                        <a href="#">Chap 10</a>
+                        <a href="#">Chap 11</a>
+
+
+                    </nav>
+                    <button id="showBottom" class="btn chapter-list">Chap 1 <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                     <button class="btn read-now">Đọc ngay</button>
                 </div>
             </div>
@@ -455,8 +494,14 @@
 
                 var menuLeft = document.getElementById('cbp-spmenu-s1'),
                     showLeftPush = document.getElementById('showLeftPush'),
+                    menuBottom = document.getElementById('cbp-spmenu-s4'),
+                    showBottom = document.getElementById('showBottom'),
+
+                    showTop = document.getElementById('showTop'),
+                    menuTop = document.getElementById('cbp-spmenu-s3'),
                     body = document.body,
                     mask = document.getElementById('mask');
+
 
                 showLeftPush.onclick = function() {
                     classie.toggle(this, 'active');
@@ -467,6 +512,23 @@
 
                 mask.onclick = function() {
                     $('#showLeftPush').trigger('click')
+                };
+
+                showTop.onclick = function() {
+                    classie.toggle(this, 'active');
+                    classie.toggle(menuTop, 'cbp-spmenu-open');
+                    // disableOther('showTop');
+                    var marginLeft = (jQuery(window).width() - $('.container-fluid').width()) / 2;
+                    $('.cbp-spmenu-horizontal').css({
+                        "margin": "0 " + marginLeft + 'px'
+                    })
+                };
+
+                showBottom.onclick = function() {
+                    classie.toggle(this, 'active');
+                    classie.toggle(menuBottom, 'cbp-spmenu-open');
+                    classie.toggle(document.querySelector('.read-now'), 'read-now-black');
+
                 };
             });
         </script>

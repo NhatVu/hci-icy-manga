@@ -621,3 +621,8 @@ body {
    height: 100%;
    width: 100%;
 }
+
+.read-now-black {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
