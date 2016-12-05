@@ -19,6 +19,7 @@ body {
 
 .no-outline {
     outline: none !important;
+    color:inherit !important;
 }
 
 .portion-title {
@@ -95,7 +96,18 @@ body {
     border: 1px solid transparent;
 }
 
+.header .dropdown-menu {
+    right: -110%;
+    left: auto;
+    width: 250px;
+    color: rgba(0, 0, 0, 0.54);
+    top: 110%;
+    font-size: 0.7em;
+}
 
+.header .dropdown-menu a {
+  color: rgba(0, 0, 0, 0.54);
+}
 
 .search-opacity {
     opacity: 0.54;
