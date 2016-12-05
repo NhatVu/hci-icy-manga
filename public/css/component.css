@@ -81,6 +81,12 @@
     background-color: #d8d8d8;
 }
 
+.cbp-spmenu-top a:hover{
+  background-color: #1e88e5 !important;
+  border: solid 1px #979797 !important;
+  color: #ffffff !important;
+}
+
 
 /* Vertical menu that slides from the left or right */
 
