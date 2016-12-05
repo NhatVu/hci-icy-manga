@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Icy Manga | Detail View</title>
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
         <link rel="stylesheet" href="/bootstrap-3.3.7/css/bootstrap.min.css" media="screen" title="no title">
         <link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" media="screen" title="no title">
@@ -13,10 +15,21 @@
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" title="no title"> -->
     </head>
 
-    <body>
+    <body class="cbp-spmenu-push">
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+            <h1>MENU</h1>
+            <a href="#">Trang chủ</a>
+            <a href="#">Tất cả truyện</a>
+            <a href="#">Nhân vật</a>
+            <a href="#">Hướng dẫn</a>
+            <a href="#">Sản phẩm </a>
+            <a href="#" class="inline"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="inline"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="#" class="inline"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </nav>
         <!-- header -->
         <div class="header">
-            <button href="#" class="btn btn-hamburger">
+            <button id="showLeftPush" class="btn btn-hamburger">
               <span class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
             <div class="line"></div>
@@ -416,14 +429,18 @@
         <div class="footer">
             <h3>Tải ngay trên <a href="#">Android</a> &#124 <a href="#">iOS</a></h3>
         </div>
+        <div id="mask"></div>
 
         <script src="/bootstrap-3.3.7/js/jquery-2.2.4.min.js"></script>
         <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
         <script src="/owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/classie.js"></script>
+
         <script type="text/javascript">
             $(function() {
                 // $(document).on("mousewheel", function() {
                 $(window).scroll(function() {
+                    console.log($(document).scrollTop());
                     if ($(document).scrollTop() > 100) {
                         // $('.secondaryNav').show();
                         $('.short-detail-navigation').fadeOut(1000);
@@ -435,6 +452,22 @@
 
                     };
                 });
+
+                var menuLeft = document.getElementById('cbp-spmenu-s1'),
+                    showLeftPush = document.getElementById('showLeftPush'),
+                    body = document.body,
+                    mask = document.getElementById('mask');
+
+                showLeftPush.onclick = function() {
+                    classie.toggle(this, 'active');
+                    classie.toggle(body, 'cbp-spmenu-push-toright');
+                    classie.toggle(menuLeft, 'cbp-spmenu-open');
+                    classie.toggle(mask, 'mask-active');
+                }
+
+                mask.onclick = function() {
+                    $('#showLeftPush').trigger('click')
+                };
             });
         </script>
     </body>

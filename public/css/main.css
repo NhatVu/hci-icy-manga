@@ -453,7 +453,7 @@ body {
 
 .short-detail-navigation {
     font-size: 1.25em;
-    position: absolute;
+    position: fixed;
     right: 2%;
     bottom: 5%;
 }
