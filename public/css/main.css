@@ -236,7 +236,7 @@ body {
 
 .popular-manga-one {
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
-    margin: 0 1%;
+    margin: 1% 1%;
     width: 23%;
     padding: 0;
 }
@@ -639,3 +639,11 @@ body {
     background-color: #000000 !important;
     color: #ffffff !important;
 }
+
+.saved-manga > h1 {
+  background-color: #1e88e5;
+   border: solid 1px #979797;
+   color: #ffffff;
+   font-size: 2.5em;
+   padding: 1% 0;
+ }
